@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-imbox",
+  "name": "@imbox/eslint-config-imbox",
   "version": "1.0.0",
   "description": "General lint and formatting configs.",
   "main": "index.js",
