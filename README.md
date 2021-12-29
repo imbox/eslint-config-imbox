@@ -37,3 +37,38 @@ Create an `.prettierrc` file that contains:
 ```
 
 
+## Optional Additions
+
+package.json scripts (update ./src/ to fit project) :
+```json
+{
+  "scripts": {
+    "format:check": "prettier ./src/",
+    "format:fix": "prettier --write ./src/",
+    "lint:check": "eslint ./src/",
+    "lint:fix": "eslint --fix ./src/"
+  }
+}
+```
+
+VSCode lint/format settings in .vscode/settings.json
+```json
+{
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.workingDirectories": [{"mode": "auto"}],
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+}
+```
+
+VSCode extension recommendations in .vscode/extensions.json
+```json
+{ "recommendations": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode"] }
+```
