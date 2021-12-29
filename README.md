@@ -17,8 +17,10 @@ npm install -D @imbox/eslint-config-imbox
 
 Install peer deps:
 ```
-npm install -D eslint@7.32.0 prettier@2.5.1 typescript @typescript-eslint/eslint-plugin@4.23.0 eslint-config-prettier@8.3.0 eslint-config-standard@16.0.3 eslint-plugin-import@2.25.3 eslint-plugin-prettier@4.0.0 eslint-plugin-promise@5.2.0 eslint-plugin-react@7.23.2 eslint-plugin-node@11.1.0 @typescript-eslint/parser@5.8.1
+npm i -D eslint@7.32.0 prettier@2.5.1 typescript @typescript-eslint/eslint-plugin@4.23.0 eslint-plugin-prettier@4.0.0 eslint-plugin-import@2.25.3 eslint-plugin-node@11.1.0 eslint-plugin-promise@5.2.0 eslint-plugin-react@7.28.0
 ```
+
+
 
 ## Link configurations
 
@@ -33,3 +35,5 @@ Create an `.prettierrc` file that contains:
 ```
 "@imbox/eslint-config-imbox/prettier"
 ```
+
+
