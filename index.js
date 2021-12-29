@@ -2,7 +2,9 @@ module.exports = {
   rules: {
     "@typescript-eslint/no-explicit-any": ["off"],
     "no-prototype-builtins": ["off"],
-    semi: ["error", "never"]
+    semi: ["error", "never"],
+    "no-use-before-define": [0],
+    "@typescript-eslint/no-use-before-define": [1]
   },
   extends: [
     "standard",
